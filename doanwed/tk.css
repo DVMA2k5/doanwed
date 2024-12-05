@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Thiết lập giao diện cho trang wed*/
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*Chỉnh phần header*/
+header {
+    margin: 0;
+    padding: 0;
+    /*không có khoảng cách giữa các thành phần*/
+    background-color: #B0C5A4;
+    position: fixed;
+    /*Giữ header cố định */
+    top: 0;
+    /* Đặt header ở trên cùng */
+    left: 0;
+    /* Đặt header ở bên trái */
+    width: 100%;
+    /* Đảm bảo header chiếm toàn bộ chiều rộng màn hình */
+    z-index: 1000;
+    /* Đặt z-index cao để đảm bảo header không bị chồng lên bởi các phần khác */
+    display: flex;
+}
+/*Chỉnh logo*/
+.logo {
+    padding: 0;
+    width: 155px;
+    height: 100px;
+}
+
+.logo img {
+    /*Chỉnh ảnh*/
+    width: 180px;
+    height: 100px;
+}
+
+/*Chỉnh thanh tìm kiếm*/
+.search {
+    display: flex;
+    width: 550px;
+    height: 97px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+
+}
+
+.khungchua {
+    border: 1px solid #D37676;
+    border-radius: 12px;
+    height: 36px;
+    width: 450px;
+    padding-left: 13px;
+    background-color: white;
+    padding: 1px 7px;
+    
+}
+
+.search input {
+    width: 400px;
+    height: 30px;
+    outline: none;
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+.search button {
+    height: 30px;
+    width: 20px;
+    border: 1px solid white;
+}
+
+.search a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #D37676;
+    margin-left: 11px;
+
+}
+
+/*Chỉnh menu*/
+.main_menu {
+    height: 100px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.main_menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.main_menu li {
+    width: 90px;
+    padding: 0;
+}
+
+.main_menu a {
+    text-decoration: none;
+    font-size: 21px;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 0;
+}
+
+.main_menu a:hover {
+    text-decoration: underline;
+}
+
+/*Chỉnh phần đăng nhập*/
+.sign {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin-left: 100px;
+}
+
+.muclucme img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Ảnh đại diện bo tròn */
+    cursor: pointer;
+  }
+  
+  /* Mục lục ẩn */
+  .muclucan {
+    display: none; /* Ẩn mặc định */
+    position: absolute;
+    top: 80px; /* Đặt ngay dưới mục mẹ */
+    left: 78%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: none;
+    z-index: 10;
+    width: 250px
+  }
+ 
+  .muclucan ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0px;
+    font-size: 15px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .muclucan ul li a:hover {
+    background-color:#D37676;
+    color: #fff;
+  }
+  
+  /* Hiển thị menu khi hover vào mục mẹ */
+  .sign:hover .muclucan {
+    display: block;
+  }
+.sign i {
+    color: white;
+    font-size: 30px;
+}
+
+.sign a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Chỉnh sửa phần thân*/
+.than{
+    margin-top: 130px;
+    margin-left: 5%;
+    display: flex;
+    
+    
+}
+.left{
+    width: 200px;
+}
+.anh{
+    display: flex;
+}
+.lylich{
+    margin-left: 10px;
+}
+.lylich a{
+    text-decoration: none;
+    color: gray;
+}
+.anh img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+/*Chỉnh sửa thông tin*/
+.thongtin{
+    line-height: 27px;
+    margin-top: 50px;
+}
+.thongtin a{
+    margin-top: 10px;
+    color:rgb(53, 51, 51);
+    font-size: 20px;
+
+}
+
+.thongtin ul{
+    padding-left:  30px;
+}
+.thongtin a:hover{
+    color:#D37676;
+}
+/* Bố cục tổng thể */
+.right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(45, 44, 44, 0.39);
+}
+
+/* Khu vực tài khoản */
+.taikhoan {
+    flex: 2;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.taikhoan h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.taikhoan p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    
+}
+
+.taikhoan ul {
+    list-style: none;
+    line-height: 10px;
+}
+
+.taikhoan li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.taikhoan li label {
+    margin-right: 15px;
+}
+.taikhoan ul li p{
+    font-size: 15px;
+    margin: 10px 0px;
+    font-weight: 500;
+
+}
+
+
+/* Khu vực ảnh đại diện */
+.tt {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-right: 80px;
+}
+
+.tt img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.tt button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color:#D37676;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tt button:hover {
+    background-color:#df6767;
+}
+ 
+
+
+/*Chỉnh phần cuối trang wed*/
+footer{
+    margin-top: 50px;
+    padding: 15px 15px;
+    background-color: #B0C5A4;
+    width: 100%;
+    display: flex;
+}
+footer div{
+    width: 500px;
+    height: auto;
+    padding:20px 20px;
+    margin-left: 100px;
+    font-size: 30px;
+    color: white;
+    line-height: 1;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    padding: 3px 5px;
+    font-size: 23px;
+}
+.brand{
+    display: flex;
+    gap: 4px;
+}
+.brand a{
+    text-decoration: none;
+    color: white;
+}

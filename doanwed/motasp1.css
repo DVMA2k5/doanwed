@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Thiết lập giao diện cho trang wed*/
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+}
+
+/*Chỉnh phần header*/
+header {
+    margin: 0;
+    padding: 0;
+    /*không có khoảng cách giữa các thành phần*/
+    background-color: #B0C5A4;
+    position: fixed;
+    /*Giữ header cố định */
+    top: 0;
+    /* Đặt header ở trên cùng */
+    left: 0;
+    /* Đặt header ở bên trái */
+    width: 100%;
+    /* Đảm bảo header chiếm toàn bộ chiều rộng màn hình */
+    z-index: 1000;
+    /* Đặt z-index cao để đảm bảo header không bị chồng lên bởi các phần khác */
+    display: flex;
+}
+
+/*Chỉnh logo*/
+.logo {
+    padding: 0;
+    width: 155px;
+    height: 100px;
+}
+
+.logo img {
+    /*Chỉnh ảnh*/
+    width: 180px;
+    height: 100px;
+}
+
+/*Chỉnh thanh tìm kiếm*/
+.search {
+    display: flex;
+    width: 550px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+
+}
+
+.khungchua {
+    border: 1px solid #D37676;
+    border-radius: 12px;
+    height: 36px;
+    width: 450px;
+    padding-left: 13px;
+    background-color: white;
+    padding: 1px 7px;
+}
+
+.search input {
+    width: 400px;
+    height: 30px;
+    outline: none;
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+.search button {
+    height: 30px;
+    width: 20px;
+    border: 1px solid white;
+}
+
+.search a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #D37676;
+    margin-left: 11px;
+
+}
+
+/*Chỉnh menu*/
+.main_menu {
+    height: 100px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.main_menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.main_menu li {
+    width: 90px;
+    padding: 0;
+}
+
+.main_menu a {
+    text-decoration: none;
+    font-size: 21px;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 0;
+}
+
+.main_menu a:hover {
+    text-decoration: underline;
+}
+
+/*Chỉnh phần đăng nhập*/
+.sign {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 100px;
+}
+
+.sign button {
+    padding: 7px 7px;
+    border-radius: 15px;
+    background-color: #D37676;
+}
+
+.sign i {
+    color: white;
+    font-size: 30px;
+}
+
+.sign a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Chỉnh phần mô tả*/
+
+.mota{
+    margin-top:0;
+    padding: 30px 30px;
+}
+
+.khung{
+    margin-left: 120px;
+    border: 1px solid black;
+    width: 1200px;
+    height: auto;
+}
+.sp{
+    display: flex;
+    padding: 30px 25px;
+    
+}
+.sp img{
+    width: 350px;
+    height: 300px;
+}
+.nd{
+    padding: 30px 10px;
+}
+.nd h1{
+    color: rgba(42, 42, 42, 0.908);
+}
+.dgia{
+    margin-top: 10px;
+    gap: 5px;
+}
+.dgia i{
+    color: rgb(223, 223, 67);
+}
+.gsp{
+    margin-top: 10px;
+    display: flex;
+}
+.gsp h2{
+    font-weight: normal;
+}
+.gsp h3{
+    color: #D37676;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+/*Chỉnh phần khung số lượng*/
+.sl{
+    margin-top: 10px;
+}
+.sl label{
+    font-size: 20px;
+    font-weight: 400;
+}
+.sl select{
+    border: 1px solid black;
+    padding: 10px 10px;
+    margin-left: 2px;
+}
+.nutmt{
+    margin-top: 12px;
+    margin-left: 2px;
+    display: flex;
+    gap: 10px;
+}
+.nutmt button{
+    background-color: #D37676;
+    padding: 11px 30px;
+    border-radius: 5px;
+}
+.cs button{
+    background-color: white;
+    border: 1px solid #D37676;
+}
+.cs i{
+    color: #D37676;
+
+}
+.cs button:hover{
+    background-color: white;
+}
+.nutmt a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+/*chỉnh phần thông báo khi xác nhận mua hàng*/
+#cartMessage{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    display: none;
+    background-color:#D37676;
+    color: aliceblue;
+    font-size: 15px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    padding: 10px 20px;
+    z-index: 1000; /* Đảm bảo thông báo nằm trên các phần tử khác */
+
+}
+/*Chỉnh phần ghi chú*/
+.ghichu{
+    margin-top: 120px;
+    margin-left: 150px;
+}
+.ghichu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/*Chỉnh phần chi tiết mô tả*/
+.noidung{
+    max-height: 300px; /* Chiều cao tối đa khi thu gọn */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.noidung.expanded {
+    max-height: 1000px; /* Hiển thị toàn bộ nội dung */
+}
+.motachitiet{
+    margin-top: 0;
+    padding: 30px 25px;
+    
+}
+.motachitiet h1{
+    text-align: center;
+    border-bottom: 3px solid rgb(94, 92, 92);
+}
+
+.noidung ul{
+    margin-left: 40px;
+}
+.noidung h3,.noidung p,.noidung li{
+    line-height: 1.8;
+}
+/*Chỉnh phần nút bấm*/
+.nut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#showMoreButton, #showLessButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color:#D37676;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#showMoreButton:hover, #showLessButton:hover {
+    background-color:#b93636;
+}
+/*Chỉnh phần tư vấn*/
+.tuvan {
+    margin-top: 50px;
+    margin-left: 110px;
+    padding: 30px 30px;
+    background-color: #B0C5A4;
+    width: 1270px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.tuvan ul {
+    list-style: none;
+}
+
+.tuvan h1,.tuvan p {
+    color: white;
+    text-align: center;
+}
+
+.tuvan h1 {
+    font-size: 35px;
+}
+
+.tuvan p {
+    font-size: 20px;
+}
+
+.kcx {
+    margin-top: 10px;
+    padding: 10px 10px;
+    padding-left: 287px;
+}
+
+.kc {
+    width: 559px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 30px;
+}
+
+.kc input {
+    margin-left: 20px;
+    width: 450px;
+    height: 40px;
+    font-size: 18px;
+    outline: none;
+}
+
+.kc button {
+    height: 44px;
+    width: 85px;
+    background-color: #D37676;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*Chỉnh phần cuối trang wed*/
+footer{
+    margin-top: 50px;
+    padding: 15px 15px;
+    background-color: #B0C5A4;
+    width: 100%;
+    display: flex;
+}
+footer div{
+    width: 500px;
+    height: auto;
+    padding:20px 20px;
+    margin-left: 100px;
+    font-size: 30px;
+    color: white;
+    line-height: 1;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    padding: 3px 5px;
+    font-size: 23px;
+}
+.brand{
+    display: flex;
+    gap: 4px;
+}
+.brand a{
+    text-decoration: none;
+    color: white;
+}
